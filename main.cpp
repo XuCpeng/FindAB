@@ -12,7 +12,7 @@ void findX(int x,List list){
         return;
     }
 
-    while (2*list.GetBack()>=x&&2*list.GetFront()<=x) {
+    while (list.Amount()>0&&2*list.GetBack()>=x&&2*list.GetFront()<=x) {
         while (list.GetBack() > x - list.GetFront()) {
             list.PopBack();
         }
